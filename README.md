@@ -42,8 +42,7 @@
 
 |Column|Type|Options|
 |------|----|-------|
-|group_id|bigint|null: false, foreign_key: true|
-|date|string|null: false|
+|title|string|null: false|
 
 ### Association
 - belongs_to :group
@@ -54,7 +53,7 @@
 
 |Column|Type|Options|
 |------|----|-------|
-|body|text|
+|comment|text|null: false|
 |image|string|
 |group_id|bigint|null: false, foreign_key: true|
 |user_id|bigint|null: false, foreign_key: true|
