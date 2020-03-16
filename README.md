@@ -60,4 +60,4 @@
 
 ### Association
 - belongs_to :user
-- belongs_to :date# KYO-MESHI
+- belongs_to :date
