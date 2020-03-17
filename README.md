@@ -55,8 +55,8 @@
 |------|----|-------|
 |comment|text|null: false|
 |image|string|
-|group_id|bigint|null: false, foreign_key: true|
 |user_id|bigint|null: false, foreign_key: true|
+|group_id|bigint|null: false, foreign_key: true|
 
 ### Association
 - belongs_to :user

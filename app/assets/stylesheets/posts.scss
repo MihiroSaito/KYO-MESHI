@@ -1,0 +1,634 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+.all {
+  height: 100%;
+  width: 100%;
+
+  .header {
+    background: linear-gradient(100deg, #FF9300, #FAE232);
+    height: 70px;
+    width: 100%;
+    display: flex;
+    position: relative;
+  
+
+    .header-title {
+      font-size: 40px;
+      line-height: 70px;
+      color: white;
+      font-family: Impact, 'Arial Narrow Bold', sans-serif;
+      padding-left: 200px;
+      letter-spacing: 2px;
+
+      a{
+        text-decoration: none;
+        color: white;
+      }
+    }
+
+    ul {
+      display: flex;
+      position: absolute;
+      right: 30px;
+    
+      .group-name {
+        line-height: 40px;
+        position: relative;
+        height: 40px;
+        width: 300px;
+        margin-top: 15px;
+        font-size: 20px;
+        
+
+        .triangle {
+          width: 0;
+          height: 0;
+          border-left: 5px solid transparent;
+          border-right: 5px solid transparent;
+          border-top: 5px solid black;
+          position: absolute;
+          right: 10px;
+          bottom: 15px;
+        }
+        
+        a{
+          display:block;
+          text-decoration: none;
+          color: black;
+          text-align: right;
+          padding-right: 25px;
+        }
+      }
+
+
+      .account-logo {
+        height: 50px;
+        width: 50px;
+        background-image: url("https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80");
+        background-size: cover;
+        padding-top: 10%;
+        margin-left: 55px;
+        margin-top: 10px;
+        border-radius: 50px;
+      }
+    }
+
+
+
+    
+  }
+
+  .contents {
+    height: 150%;
+    width: 100vw;
+    background-color: #FAF9FB;
+
+    .title-box {
+      height: 80px;
+      width: 85%;
+      border-bottom: 2px solid #FF9300;
+      margin-left: 100px;
+      position: relative;
+      display: flex;
+
+      .group-name {
+        font-size: 25px;
+        line-height: 95px;
+        margin-left: 10px;
+      }
+      p {
+        padding-top: 43px;
+        margin-left: 10px;
+        font-size: 17px;
+      }
+
+
+      .subtitle {
+        background-color: white;
+        height: 35px;
+        width: 200px;
+        border: 1px solid gray;
+        float: right;
+        position: absolute;
+        right: 85px;
+        bottom: 3px;
+        font-size: 13px;
+        outline: none;
+        cursor: pointer;
+        color: gray;
+        border-radius: 30px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        padding-left: 15px;
+      }
+      .subtitle:hover {
+        opacity: 0.5;
+      }
+    }
+
+    .main-content {
+      width: calc(100vw - 35%);
+      height: 100%;
+      background-color: #FAF9FB;
+      float: left;
+      
+
+      .ranking {
+        display: flex;
+        width: 1000px;
+        height: 350px;
+        margin-left: 100px;
+        margin-top: 50px;
+
+        .rank1 {
+          height: 250px;
+          width: 250px;
+          background-image: url(https://img.cpcdn.com/recipes/3728860/280x487s/bfd5415ce725a659616a1438ba7ee872.jpg?u=13189934&p=1584079336);
+          margin-top: 50px;
+          margin-left: 3%;
+          border-radius: 10px;
+          box-shadow:0px 0px 5px;
+
+          .fa-award {
+            font-size: 2.5em;
+            display: inline-block;
+            color: goldenrod;
+            margin-top: 5px ;
+            margin-left: 5px;
+            float: left;
+          }
+
+          .fa-file-alt {
+            color: white;
+            background-color: gray;
+            font-size: 1.0em;
+            height: 25px;
+            width: 25px;
+            border-radius: 50%;
+            line-height: 25px;
+            text-align: center;
+            float: right;
+            margin-top: 5px;
+            margin-right: 5px;
+            opacity: 0.7;
+          }
+          
+        }
+  
+        .rank2 {
+          height: 220px;
+          width: 220px;
+          background-image: url(https://img.cpcdn.com/recipes/3728860/280x487s/bfd5415ce725a659616a1438ba7ee872.jpg?u=13189934&p=1584079336);
+          margin-top: 80px;
+          margin-left: 6.5%;
+          border-radius: 10px;
+          box-shadow:0px 0px 5px;
+
+          .fa-award {
+            font-size: 2.0em;
+            display: inline-block;
+            color: silver;
+            margin-top: 5px ;
+            margin-left: 5px;
+          }
+
+          .fa-file-alt {
+            color: white;
+            background-color: gray;
+            font-size: 1.0em;
+            height: 25px;
+            width: 25px;
+            border-radius: 50%;
+            line-height: 25px;
+            text-align: center;
+            float: right;
+            margin-top: 5px;
+            margin-right: 5px;
+            opacity: 0.7;
+          }
+        }
+  
+        .rank3 {
+          height: 180px;
+          width: 180px;
+          background-image: url(https://img.cpcdn.com/recipes/3728860/280x487s/bfd5415ce725a659616a1438ba7ee872.jpg?u=13189934&p=1584079336);
+          margin-top: 120px;
+          margin-left: 6.5%;
+          border-radius: 10px;
+          box-shadow:0px 0px 5px;
+
+          .fa-award {
+            font-size: 1.7em;
+            display: inline-block;
+            color: rgb(124, 58, 3);
+            margin-top: 5px ;
+            margin-left: 5px;
+          }
+
+          .fa-file-alt {
+            color: white;
+            background-color: gray;
+            font-size: 1.0em;
+            height: 25px;
+            width: 25px;
+            border-radius: 50%;
+            line-height: 25px;
+            text-align: center;
+            float: right;
+            margin-top: 5px;
+            margin-right: 5px;
+            opacity: 0.7;
+          }
+        }
+      }
+
+      .posts {
+        height: 100%;
+        width: 100%;
+        margin-left: 150px;
+        margin-top: 80px;
+
+
+        .post-box1 {
+          height: 300px;
+          width: 260px;
+          float: left;
+
+          .post1 {
+            height: 220px;
+            width: 220px;
+            background-image: url(https://img.cpcdn.com/recipes/3728860/280x487s/bfd5415ce725a659616a1438ba7ee872.jpg?u=13189934&p=1584079336);
+            margin-top: 10px;
+            margin-left: 20px;
+            border-radius: 10px;
+
+            .fa-file-alt {
+              color: white;
+              background-color: gray;
+              font-size: 1.0em;
+              height: 25px;
+              width: 25px;
+              border-radius: 50%;
+              line-height: 25px;
+              text-align: center;
+              float: right;
+              margin-top: 5px;
+              margin-right: 5px;
+              opacity: 0.7;
+            }
+          }
+
+          .this {
+            background-color: gray;
+            width: 65px;
+            height: 30px;
+            margin-left: 170px;
+            margin-top: 10px;
+            text-align: center;
+            line-height: 30px;
+            border-radius: 20px;
+            opacity: 0.5;
+            color: white;
+          }
+        }
+
+        .post-box2 {
+          height: 300px;
+          width: 260px;
+          float: left;
+
+          .post2 {
+            height: 220px;
+            width: 220px;
+            background-image: url(https://img.cpcdn.com/recipes/3728860/280x487s/bfd5415ce725a659616a1438ba7ee872.jpg?u=13189934&p=1584079336);
+            margin-top: 10px;
+            margin-left: 20px;
+            border-radius: 10px;
+
+            .fa-file-alt {
+              color: white;
+              background-color: gray;
+              font-size: 1.0em;
+              height: 25px;
+              width: 25px;
+              border-radius: 50%;
+              line-height: 25px;
+              text-align: center;
+              float: right;
+              margin-top: 5px;
+              margin-right: 5px;
+              opacity: 0.7;
+            }
+          }
+
+          .this {
+            background-color: rgb(241, 87, 87);
+            width: 65px;
+            height: 30px;
+            margin-left: 170px;
+            margin-top: 10px;
+            text-align: center;
+            line-height: 30px;
+            border-radius: 20px;
+            color: white;
+          }
+        }
+
+        .post-box3 {
+          height: 300px;
+          width: 260px;
+          float: left;
+
+          .post3 {
+            height: 220px;
+            width: 220px;
+            background-image: url(https://img.cpcdn.com/recipes/3728860/280x487s/bfd5415ce725a659616a1438ba7ee872.jpg?u=13189934&p=1584079336);
+            margin-top: 10px;
+            margin-left: 20px;
+            border-radius: 10px;
+
+            .fa-file-alt {
+              color: white;
+              background-color: gray;
+              font-size: 1.0em;
+              height: 25px;
+              width: 25px;
+              border-radius: 50%;
+              line-height: 25px;
+              text-align: center;
+              float: right;
+              margin-top: 5px;
+              margin-right: 5px;
+              opacity: 0.7;
+            }
+          }
+
+          .this {
+            background-color: gray;
+            width: 65px;
+            height: 30px;
+            margin-left: 170px;
+            margin-top: 10px;
+            text-align: center;
+            line-height: 30px;
+            border-radius: 20px;
+            opacity: 0.5;
+            color: white;
+          }
+        }
+
+        .post-box4 {
+          height: 300px;
+          width: 260px;
+          float: left;
+
+          .post4 {
+            height: 220px;
+            width: 220px;
+            background-image: url(https://img.cpcdn.com/recipes/3728860/280x487s/bfd5415ce725a659616a1438ba7ee872.jpg?u=13189934&p=1584079336);
+            margin-top: 10px;
+            margin-left: 20px;
+            border-radius: 10px;
+
+            .fa-file-alt {
+              color: white;
+              background-color: gray;
+              font-size: 1.0em;
+              height: 25px;
+              width: 25px;
+              border-radius: 50%;
+              line-height: 25px;
+              text-align: center;
+              float: right;
+              margin-top: 5px;
+              margin-right: 5px;
+              opacity: 0.7;
+            }
+          }
+
+          .this {
+            background-color: gray;
+            width: 65px;
+            height: 30px;
+            margin-left: 170px;
+            margin-top: 10px;
+            text-align: center;
+            line-height: 30px;
+            border-radius: 20px;
+            opacity: 0.5;
+            color: white;
+          }
+        }
+
+        .post-box5 {
+          height: 300px;
+          width: 260px;
+          float: left;
+
+          .post5 {
+            height: 220px;
+            width: 220px;
+            background-image: url(https://img.cpcdn.com/recipes/3728860/280x487s/bfd5415ce725a659616a1438ba7ee872.jpg?u=13189934&p=1584079336);
+            margin-top: 10px;
+            margin-left: 20px;
+            border-radius: 10px;
+
+            .fa-file-alt {
+              color: white;
+              background-color: gray;
+              font-size: 1.0em;
+              height: 25px;
+              width: 25px;
+              border-radius: 50%;
+              line-height: 25px;
+              text-align: center;
+              float: right;
+              margin-top: 5px;
+              margin-right: 5px;
+              opacity: 0.7;
+            }
+          }
+
+          .this {
+            background-color: gray;
+            width: 65px;
+            height: 30px;
+            margin-left: 170px;
+            margin-top: 10px;
+            text-align: center;
+            line-height: 30px;
+            border-radius: 20px;
+            opacity: 0.5;
+            color: white;
+          }
+        }
+
+        .post-box6 {
+          height: 300px;
+          width: 260px;
+          float: left;
+
+          .post6 {
+            height: 220px;
+            width: 220px;
+            background-image: url(https://img.cpcdn.com/recipes/3728860/280x487s/bfd5415ce725a659616a1438ba7ee872.jpg?u=13189934&p=1584079336);
+            margin-top: 10px;
+            margin-left: 20px;
+            border-radius: 10px;
+
+            .fa-file-alt {
+              color: white;
+              background-color: gray;
+              font-size: 1.0em;
+              height: 25px;
+              width: 25px;
+              border-radius: 50%;
+              line-height: 25px;
+              text-align: center;
+              float: right;
+              margin-top: 5px;
+              margin-right: 5px;
+              opacity: 0.7;
+            }
+          }
+
+          .this {
+            background-color: gray;
+            width: 65px;
+            height: 30px;
+            margin-left: 170px;
+            margin-top: 10px;
+            text-align: center;
+            line-height: 30px;
+            border-radius: 20px;
+            opacity: 0.5;
+            color: white;
+          }
+        }
+      }
+    }    
+  }
+
+    .right-content {
+      width: 35%;
+      height: 100%;
+      background-color: #FAF9FB;
+      float: right;
+      padding-bottom: 430px;
+      
+
+      .new-table {
+        height: 50px;
+        width: 200px;
+        text-align: center;
+        line-height: 50px;
+        border-radius: 10px;
+        background-color:lightgray;
+        color: white;
+        margin-top: 50px;
+        margin-left: 100px;
+
+        a {
+          text-decoration: none;
+          color: white;
+        }
+      }
+      .new-table:hover {
+        opacity: 0.5;
+      }
+
+
+
+
+
+      .new-post {
+        background-color: white;
+        border-radius: 30px;
+        border: 2px solid #F2B845;
+        height: 50px;
+        width: 160px;
+        text-align: center;
+        line-height: 48px;
+        margin-top: 50px;
+        margin-left: 120px;
+
+        a {
+          text-decoration: none;
+          color: black;
+        }
+      }
+      .new-post:hover {
+        opacity: 0.5;
+      }
+
+      .sidebox-title {
+        background: linear-gradient(100deg, #FF9300, #FAE232);
+        height: 50px;
+        width: 230px;
+        margin-top: 50px;
+        margin-left: 90px;
+        text-align: center;
+        line-height: 50px;
+        color: white;
+        font-size: 20px;
+        border-radius: 10px 10px 0px 0px;
+      }
+
+      .sidebox-contents {
+        background-color: white;
+        width: 230px;
+        height: 350px;
+        margin-left: 90px;
+        border-radius: 0px 0px 10px 10px;
+
+        .find-shop {
+          font-size: 17px;
+          border-bottom: 1px solid #FF9300;
+          height: 50px;
+          width: 210px;
+          line-height: 65px;
+          margin: auto;
+          padding-left: 5px;
+          a {
+            text-decoration: none;
+  
+          }
+  
+          p {
+            font-size: 16px;
+            margin-left: 30px;
+          }
+        }
+        .find-recipe {
+          font-size: 17px;
+          border-bottom: 1px solid #FF9300;
+          height: 50px;
+          width: 210px;
+          line-height: 65px;
+          margin: auto;
+          margin-top: 30px;
+          padding-left: 5px;
+        }
+
+        a {
+          text-decoration: none;
+
+        }
+
+        p {
+          font-size: 16px;
+          margin-left: 30px;
+          margin-top: 30px;
+        }
+
+
+       }
+  
+  }
+}
