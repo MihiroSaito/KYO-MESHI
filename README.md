@@ -24,7 +24,7 @@
 ### Association
 - has_many :users, through:  :group_users
 - has_many :group_users
-- has_many :dates
+- has_many :group_dates
 
 ## group_usersテーブル
 
@@ -38,7 +38,7 @@
 - belongs_to :user
 
 
-## datesテーブル
+## group_datesテーブル
 
 |Column|Type|Options|
 |------|----|-------|
@@ -60,4 +60,4 @@
 
 ### Association
 - belongs_to :user
-- belongs_to :date
+- belongs_to :group_date
