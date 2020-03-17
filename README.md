@@ -54,6 +54,7 @@
 |Column|Type|Options|
 |------|----|-------|
 |comment|text|null: false|
+|url|string|
 |image|string|
 |user_id|bigint|null: false, foreign_key: true|
 |group_id|bigint|null: false, foreign_key: true|
