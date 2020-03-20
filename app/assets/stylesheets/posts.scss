@@ -8,11 +8,12 @@
 .all {
   height: 100%;
   width: 100%;
+  background-color: #FAF9FB;
 
   .header {
     background: linear-gradient(100deg, #FF9300, #FAE232);
     height: 70px;
-    width: 100%;
+    width: 100vw;
     display: flex;
     position: relative;
   
@@ -84,9 +85,8 @@
   }
 
   .contents {
-    height: 150%;
+    height: 100%;
     width: 100vw;
-    background-color: #FAF9FB;
 
     .title-box {
       height: 80px;
@@ -133,17 +133,18 @@
     }
 
     .main-content {
-      width: calc(100vw - 35%);
+      width: calc(100% - 35%);
       height: 100%;
       background-color: #FAF9FB;
       float: left;
+      position: relative;
       
 
       .ranking {
         display: flex;
-        width: 1000px;
+        width: 85%;
         height: 350px;
-        margin-left: 100px;
+        margin-left: 120px;
         margin-top: 50px;
 
         .rank1 {
@@ -151,7 +152,7 @@
           width: 250px;
           background-image: url(https://img.cpcdn.com/recipes/3728860/280x487s/bfd5415ce725a659616a1438ba7ee872.jpg?u=13189934&p=1584079336);
           margin-top: 50px;
-          margin-left: 3%;
+          margin-left: 40px;
           border-radius: 10px;
           box-shadow:0px 0px 5px;
 
@@ -186,7 +187,7 @@
           width: 220px;
           background-image: url(https://img.cpcdn.com/recipes/3728860/280x487s/bfd5415ce725a659616a1438ba7ee872.jpg?u=13189934&p=1584079336);
           margin-top: 80px;
-          margin-left: 6.5%;
+          margin-left: 50px;
           border-radius: 10px;
           box-shadow:0px 0px 5px;
 
@@ -219,7 +220,7 @@
           width: 180px;
           background-image: url(https://img.cpcdn.com/recipes/3728860/280x487s/bfd5415ce725a659616a1438ba7ee872.jpg?u=13189934&p=1584079336);
           margin-top: 120px;
-          margin-left: 6.5%;
+          margin-left: 50px;
           border-radius: 10px;
           box-shadow:0px 0px 5px;
 

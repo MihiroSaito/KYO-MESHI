@@ -1,0 +1,2 @@
+class GroupDatesController < ApplicationController
+end
